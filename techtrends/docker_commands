@@ -1,0 +1,106 @@
+## CD into the techtrends directory 
+
+## Docker Login
+
+docker login
+
+## Commands used to build the application
+
+docker build -t techtrends .
+
+## commands to test and run the application 
+
+docker run -dp 7111:3111 techtrends
+
+## Docker run output
+
+438b23b1b8d6e54f975b68a9e53c653bd1ad6a8039c4526d3edf03ee7fddc380
+
+
+
+## Docker command to retrieve the logs 
+
+docker logs 438b23b1b8d6e54f975b68a9e53c653bd1ad6a8039c4526d3edf03ee7fddc380
+
+## TechTrends logs
+
+* Serving Flask app 'app' (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+WARNING:werkzeug: * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+INFO:werkzeug: * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO:werkzeug: * Running on http://172.17.0.2:3111/ (Press CTRL+C to quit)
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:16] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:16] "GET /static/css/main.css HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:16] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:16] "GET /favicon.ico HTTP/1.1" 404 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:25] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:25] "GET /create HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:25] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:25] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:app:Fri Nov 18 08:55:38 2022, Post "docker" created.
+DEBUG:app:Fri Nov 18 08:55:38 2022, Post "docker" created.
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:38] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:38] "POST /create HTTP/1.1" 302 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:38] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:55:38] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:app:Fri Nov 18 08:56:05 2022, Test debug message
+DEBUG:app:Fri Nov 18 08:56:05 2022, Test debug message
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:56:05] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:56:05] "GET /healthz HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:56:25] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:56:25] "GET /metrics HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:56:47] "GET /home HTTP/1.1" 404 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:56:47] "GET /home HTTP/1.1" 404 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:09] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:09] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:app:Fri Nov 18 08:57:12 2022, Post "docker" was retrieved.
+DEBUG:app:Fri Nov 18 08:57:12 2022, Post "docker" was retrieved.
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:12] "GET /7 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:12] "GET /7 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:12] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:12] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:27] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:27] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:app:Fri Nov 18 08:57:29 2022, Post "Kubernetes v1.20 Release Notes" was retrieved.
+DEBUG:app:Fri Nov 18 08:57:29 2022, Post "Kubernetes v1.20 Release Notes" was retrieved.
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:29] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:29] "GET /3 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:29] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:29] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:31] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:31] "GET /static/css/main.css HTTP/1.1" 304 -
+DEBUG:app:Fri Nov 18 08:57:34 2022, Post "2020 CNCF Annual Report" was retrieved.
+DEBUG:app:Fri Nov 18 08:57:34 2022, Post "2020 CNCF Annual Report" was retrieved.
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:34] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:34] "GET /1 HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:34] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:34] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:36] "GET /static/css/main.css HTTP/1.1" 304 -
+INFO:werkzeug:172.17.0.1 - - [18/Nov/2022 08:57:36] "GET /static/css/main.css HTTP/1.1" 304 -
+
+
+## DOcker command to tag the image 
+
+docker tag techtrends ommy007/techtrends:v1.0.0
+
+## Docker command to push the images to dockerhub 
+
+docker push ommy007/techtrends:v1.0.0
