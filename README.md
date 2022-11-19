@@ -159,4 +159,4 @@ kubectl describe po -n sandbox
 ``kubectl apply -f helm-techtrends-staging.yaml``
 ``kubectl apply -f helm-techtrends-prod.yaml``
 
-``# techtrends
+``# TECHTRENDS
