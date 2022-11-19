@@ -60,7 +60,8 @@ Make sure your oracle VM Box is open
 # create a vagrant box using the Vagrantfile in the current directory
 `vagrant up`
 
-![VM box](screenshots/VM_box.PNG "VM Box")
+<img width="1440" alt="VirtualBoxRunning" src="https://user-images.githubusercontent.com/110615576/202849282-48d7aea0-496f-4e1a-b488-c7f841a6d61f.png">
+
 
 # SSH into the vagrant box
 # Note: this command uses the .vagrant folder to identify the details of the vagrant box, you can ls to make sure it is included
