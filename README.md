@@ -47,7 +47,8 @@ Step 2: Github actions: Continuous Integration with Github Actions
         4. create the `techtrends-dockerhub.yml` in the `.github/workflows/` Might be created automatically when creating the github action.
         5. Goto `Github Actions` and click on the `create a new workflow yourself` button
 
-        <img width="1440" alt="ci-github-actions" src="https://user-images.githubusercontent.com/110615576/202849116-7198d788-b3e4-4ec6-8718-83a58d05cbd2.png">
+        
+ <img width="1440" alt="ci-github-actions" src="https://user-images.githubusercontent.com/110615576/202849167-59de7be8-718c-4a11-902b-9888d163aa2d.png">
 
 
 Step 3: Kubernetetes Declarative Manifests 
