@@ -17,7 +17,7 @@ docker run -dp 7111:3111 techtrends
 
 ## Docker run output 
 
-dae7727546ee9b84ae2b828fb23f5b45fb5723d217695f9f345e9262e858d0eb
+438b23b1b8d6e54f975b68a9e53c653bd1ad6a8039c4526d3edf03ee7fddc380
 
 ## Docker command to retrieve the logs 
 
